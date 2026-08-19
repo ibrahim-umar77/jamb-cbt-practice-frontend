@@ -38,9 +38,9 @@ function Practice() {
   useEffect(() => {
     async function loadQuestions() {
       try {
-        const response = await axios.get(
-          `http://localhost:5000/api/questions/${practiceSetId}`
-        );
+  const response = await axios.get(
+    `https://jambcbt.up.railway.app/api/questions/${practiceSetId}`
+  );
 
         console.log("Questions response:", response.data);
 

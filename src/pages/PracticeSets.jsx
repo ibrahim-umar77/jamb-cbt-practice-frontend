@@ -14,9 +14,9 @@ function PracticeSets() {
   useEffect(() => {
     async function loadPracticeSets() {
       try {
-        const response = await axios.get(
-          `http://localhost:5000/api/practice-sets/${subjectId}`
-        );
+  const response = await axios.get(
+    `https://jambcbt.up.railway.app/api/practice-sets/${subjectId}`
+  );
 
         if (response.data.success) {
           setPracticeSets(response.data.practice_sets);

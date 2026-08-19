@@ -31,7 +31,7 @@ export async function analyzeContent(type, content, file = null) {
   return response.data;
 }
 
-const BACKEND_URL = "http://localhost:5000";
+const BACKEND_URL = "https://jambcbt.up.railway.app";
 
 export async function getSubjects() {
   const response = await axios.get(`${BACKEND_URL}/api/subjects`);
