@@ -31,7 +31,7 @@ export async function analyzeContent(type, content, file = null) {
   return response.data;
 }
 
-const BACKEND_URL = "https://jambcbt.up.railway.app";
+const BACKEND_URL = "https://jambcbt.up.railway.app/api/subjects";
 
 export async function getSubjects() {
   const response = await axios.get(`${BACKEND_URL}/api/subjects`);
